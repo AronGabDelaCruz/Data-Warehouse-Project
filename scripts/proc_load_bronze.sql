@@ -23,7 +23,7 @@ Process Overview:
     5. Handle any errors gracefully with TRY/CATCH.
 
 Warning:
-    ⚠️ This procedure truncates all target tables before loading data.
+    This procedure truncates all target tables before loading data.
     Any existing data will be permanently deleted.
     Ensure valid backups exist before executing.
 ============================================================
