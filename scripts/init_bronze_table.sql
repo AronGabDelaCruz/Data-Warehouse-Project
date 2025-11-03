@@ -20,9 +20,12 @@ Warning:
 ============================================================
 */
 
+USE DataWarehouse
 ------------------------------------------------------------
 -- 1. CRM Customer Information Table
 ------------------------------------------------------------
+
+
 IF OBJECT_ID('bronze.crm_cust_info', 'U') IS NOT NULL
     DROP TABLE bronze.crm_cust_info;
 
@@ -48,8 +51,8 @@ CREATE TABLE bronze.crm_prd_info (
     prd_nm          NVARCHAR(50),
     prd_cost        INTEGER,
     prd_line        NVARCHAR(50),
-    prd_start_dt    DATE,
-    prd_end_dt      DATE
+    prd_start_dt DATETIME,
+    prd_end_dt   DATETIME
 );
 
 ------------------------------------------------------------
